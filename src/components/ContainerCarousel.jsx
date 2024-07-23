@@ -8,7 +8,7 @@ export default function ContainerCarousel() {
                     src="src/assets/yo-Alejandro-Holguin.jpg" alt="" />
 
                 </div>
-                <div className="bg-orange-400 justify-center items-center flex flex-col gap-y-1.5  lg:h-4 p-2 rounded-b-lg">
+                <div className="bg-orange-400 justify-center items-center flex flex-col gap-y-1.5 p-2 rounded-b-lg">
                    <div>
                         <p className="font-bold">Alejandro Holguin</p>
                         <p className="">Especial On Demand</p>
