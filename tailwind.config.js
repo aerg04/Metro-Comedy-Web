@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      transitionDuration: {
+        '500': '0.5s',
+      },
+      transitionTimingFunction: {
+        'ease': 'ease',
+      },
+    },
   },
   plugins: [],
 }

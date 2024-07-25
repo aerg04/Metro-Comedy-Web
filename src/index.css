@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slick-slide > div {
+  margin: 0 10px;
+  justify-content: center;
+}
+.slick-slide{
+    justify-content: center;
+}
+
+.slick-prev, .slick-next {
+    z-index: 1;
+    display: block !important;
+    opacity: 1 !important;
+  }
