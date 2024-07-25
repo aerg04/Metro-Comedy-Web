@@ -1,9 +1,9 @@
 import React from "react";
 import ContainerCarousel from "./ContainerCarousel";
 import Slider from "react-slick";
-import "../index.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import images from "../data"
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -29,21 +29,7 @@ function SamplePrevArrow(props) {
 
 export default function Carousel() {
   // Step 1: Set up state for the current image index
-  const images = [
-    { 
-      src: 'src/assets/yo-Alejandro-Holguin.jpg', 
-      name: 'Alejandro Holguin',
-      caption: 'Especial On Demand',
-      color: 'bg-yellow-400'
-    },
-    { 
-        src: 'src/assets/Juan-Trabucco.jpg', 
-        name: 'Juan Carlos Trabucco',
-        caption: 'Especial On Demand',
-        color: 'bg-red-400'
-      },
-
-  ];
+  
   var settings = {
     infinite: true,
     speed: 500,
@@ -81,8 +67,8 @@ export default function Carousel() {
   };
   return ( 
     
-        <div className="mt-4 m-auto p-6 sm:p-8 justify-center">
-              <div className="max-w-64">
+        <div className="mt-4 m-auto w-3/4 sm:w-1/2 p-6 sm:p-8 justify-center">
+              <div className="">
                 <Slider  {...settings}>
                   {images.map((image, index) => (
                 
