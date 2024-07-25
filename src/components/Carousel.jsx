@@ -1,6 +1,7 @@
 import React from "react";
 import ContainerCarousel from "./ContainerCarousel";
 import Slider from "react-slick";
+import "../index.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -44,18 +45,43 @@ export default function Carousel() {
 
   ];
   var settings = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
     nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />
+    prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+        }
+      }
+    ]
   };
   return ( 
     
-        <div className="mt-4 m-auto p-8 flex justify-center">
+        <div className="mt-4 m-auto p-6 sm:p-8 justify-center">
               <div className="max-w-64">
                 <Slider  {...settings}>
                   {images.map((image, index) => (

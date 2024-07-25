@@ -2,16 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.slick-slide > div {
+.slick-slide slick-cloned {
   margin: 0 10px;
-  justify-content: center;
-}
-.slick-slide{
-    justify-content: center;
+  width: auto !important;
 }
 
-.slick-prev, .slick-next {
-    z-index: 1;
-    display: block !important;
-    opacity: 1 !important;
-  }

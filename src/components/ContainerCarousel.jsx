@@ -2,7 +2,6 @@ import React from 'react'
 
 export default function ContainerCarousel({key,name, caption, path,color}) {
     return(
-        <>
             <div key={key} className={" text-white flex flex-col items-center justify-center w-auto"}>
                 
                     <div className={"h-64 flex overflow-hidden" }>
@@ -19,6 +18,5 @@ export default function ContainerCarousel({key,name, caption, path,color}) {
                     </div>
                
             </div>  
-        </>
     )
 }
