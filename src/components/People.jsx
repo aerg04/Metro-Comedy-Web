@@ -44,13 +44,12 @@ function People() {
         <div className="mt-4 w-3/4">
             <Slider {...settings}>
                 {images.map((image, index) => (
-                    <div key={index} className="bg-slate-500  h-[280px] p-2  rounded-xl text-white font-bold">
+                    <div key={index} className="bg-slate-500  h-[280px] p-2  rounded-xl text-white font-bold bg-gray-800">
                         <div className="flex-col flex items-center justify-center pt-9">
                             <div  className="">
                                 <img src={image.src} alt={image.name} className="w-32 h-32 object-cover rounded-full"/>
                             </div>
                             <div className="text-center">
-
                                 <h2>{image.name}</h2>
                             </div>
 
