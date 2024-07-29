@@ -67,7 +67,7 @@ export default function Carousel() {
   };
   return ( 
     
-        <div className="mt-4 m-auto w-3/4 sm:w-1/2 p-6 sm:p-8 justify-center">
+        <div className="mt-4 m-auto w-3/4 sm:w-1/2 md:w-2/5 p-6 sm:p-8 justify-center">
               <div className="">
                 <Slider  {...settings}>
                   {images.map((image, index) => (

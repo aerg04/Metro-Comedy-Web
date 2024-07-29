@@ -10,8 +10,8 @@ export default function Home() {
         <>
         <Header/>
         <div className="bg-black">
-        <div className="flex flex-col sm:flex-row sm:justify-center sm:space-x-16 bg-black text-white max-w-full">
-                <div className="w-1/2 flex flex-col text-center justify-center items-center p-2">
+            <div className="flex flex-col sm:flex-row justify-center sm:space-x-16 bg-black text-white max-w-full">
+                <div className="sm:w-1/2 flex flex-col text-center justify-center items-center h-64 sm:h-auto p-2">
                     <div className="sm:text-[40px] font-bold ">
                         <h1>
                             Metro Comedy
@@ -26,7 +26,7 @@ export default function Home() {
                     
                 </div>
                     <Carousel/>
-                </div>
+            </div>
 
                 <div className="justify-center item-center flex mb-16 my-16">
                 <ContainerRegister/>
