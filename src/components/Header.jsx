@@ -6,6 +6,10 @@ export default function Header(){
 
     const [toggled, setToggled] = useState(false);
 
+    const handleMenu = () => {
+        toggled ? setToggled(false) : setToggled(true)
+    }
+
     return(
         <header className='bg-white '>
             <nav className='flex items-center justify-between w-[92%] mx-auto'>
@@ -35,7 +39,7 @@ export default function Header(){
                 </div>
 
                 <div className='flex items-center md:hidden cursor-pointer relative' >
-                    <img onClick={setToggled} className='w-6' src={menulogo}></img>
+                    <img onClick={handleMenu} className='w-6' src={menulogo}></img>
                 </div>
             </nav>
         </header>
