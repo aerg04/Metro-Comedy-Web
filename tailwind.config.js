@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        "custom-gray": "rgb(19,20,23)"
+      },
       transitionDuration: {
         '500': '0.5s',
       },

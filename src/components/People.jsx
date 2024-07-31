@@ -41,25 +41,22 @@ function People() {
     ]
 };
     return(
-        <div className="mt-4 w-3/4">
-            <Slider {...settings}>
-                {images.map((image, index) => (
-                    <div key={index} className="bg-slate-500  h-[280px] p-2  rounded-xl text-white font-bold">
-                        <div className="flex-col flex items-center justify-center pt-9">
-                            <div  className="">
-                                <img src={image.src} alt={image.name} className="w-32 h-32 object-cover rounded-full"/>
-                            </div>
-                            <div className="text-center">
-                                <h2>{image.name}</h2>
-                            </div>
+    <div className="mt-4 py-5 w-3/4 overflow-visible">
+        <Slider {...settings}>
+            {images.map((image, index) => (
+                <div key={index} className="bg-slate-500 flex flex-col  min-h-[32vh] py-6 items-center justify-center rounded-xl text-white font-bold transition-transform duration-300 hover:-translate-y-2 hover:bg-slate-700">
+                        <div className="overflow-hidden justify-center flex">
+                          <img src={image.src} alt={image.name} className="w-32 h-32 object-cover rounded-full"/>
 
                         </div>
+                        <div className="text-center">
+                          <h2>{image.name}</h2>
+                        </div>
 
-
-                    </div>
-                ))}
-            </Slider>
-        </div>
+                </div>
+              ))}
+        </Slider>
+    </div>
     )
 
 }

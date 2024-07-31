@@ -6,4 +6,7 @@
   margin: 0 10px;
   width: auto !important;
 }
+.slick-list {
+  padding-top: 10px;
+}
 

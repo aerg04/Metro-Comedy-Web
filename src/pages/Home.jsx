@@ -3,14 +3,15 @@ import Carousel from "../components/Carousel";
 import People from "../components/People";
 import Header from "../components/Header";
 import ContainerRegister from "../components/ContainerRegister";
-
+import Footer from "../components/Footer";
+import Accordion from "../components/Accordion";
 
 export default function Home() {    
     return (
         <>
         <Header/>
-        <div className="bg-black">
-            <div className="flex flex-col sm:flex-row justify-center sm:space-x-16 bg-black text-white max-w-full">
+        <div className="bg-custom-gray">
+            <div className="flex flex-col sm:flex-row justify-center sm:space-x-16 p-2 text-white max-w-full">
                 <div className="sm:w-1/2 flex flex-col text-center justify-center items-center h-64 sm:h-auto p-2">
                     <div className="sm:text-[40px] font-bold ">
                         <h1>
@@ -33,15 +34,25 @@ export default function Home() {
                 </div>
 
                 
-                <div className="h-auto flex flex-col text-white items-center sm:justify-center bg-black">
+                <div className="h-auto flex flex-col text-white items-center sm:justify-center ">
                     <h3 className="sm:text-base">✨Claro que Yes!✨</h3>
                     <h2 className="sm:text-5xl m-4 font-bold"> Destacados </h2>
                     <h3 className="sm:text-2xl">Busca a tu profesor favorito y accede a sus shows directamente</h3>
                 </div>
 
-                <div className="h-[400px] bg-black flex items-center justify-center">
+                <div className="py-2 flex items-center justify-center">
                     <People/>
                 </div>
+                <div className="w-full flex py-2 gap-y-2 flex-col min-h-64 items-center justify-center text-white">
+                    <h2 className="sm:text-5xl m-4 font-bold">Preguntas Frecuentes</h2>
+                    <div className="">
+                        <Accordion title="¿Como me uno a MetroComedy?" answer="Escribe a +58 424-3023017"></Accordion>
+                        <Accordion title="¿Qué es MetroCommedy?" answer="Es una agrupacion estudiantil de la Universidad Metropolitana, cuyo fin es crear, practicar y presentar espectáculos cómicos "></Accordion>
+                        <Accordion title="¿Cual es el misión de MetroComedy?" answer="Crear un ambiente de risas dentro de la Univerisidad Metropolitana, teniendo en cuenta el respeto y la empatia"></Accordion>
+
+                    </div>
+                </div>
+                <Footer></Footer>
         </div>
         </>
     )
