@@ -15,8 +15,14 @@ export default {
       transitionTimingFunction: {
         'ease': 'ease',
       },
+      fontFamily:{
+        archivoBlack: ["Archivo Black", "sans-serif"],
+        outfit: ["Outfit", "sans-serif"]
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require("@designbycode/tailwindcss-text-stroke"),
+  ],
 }
 
