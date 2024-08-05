@@ -11,8 +11,8 @@ export default function Home() {
         <>
         <Header/>
         <div className="bg-custom-gray">
-            <div className="flex flex-col sm:flex-row justify-center sm:space-x-16 p-2 text-white max-w-full">
-                <div className="sm:w-1/2 flex flex-col text-center justify-center items-center h-64 sm:h-auto p-2">
+            <div className="flex flex-col md:flex-row justify-center sm:space-x-16 p-2 text-white max-w-full">
+                <div className="md:w-1/2 flex flex-col text-center mt-4 justify-center items-center h-64 sm:h-auto p-2">
                     <div className="sm:text-[40px] font-archivoBlack tracking-tight">
                         <h1>
                             Metro Comedy te trae a tus
@@ -35,7 +35,7 @@ export default function Home() {
                 </div>
 
                 
-                <div className="h-auto flex flex-col text-white items-center sm:justify-center ">
+                <div className="h-auto flex flex-col text-white text-center items-center sm:justify-center p-4">
                     <h3 className="sm:text-lg">✨Claro que Yes!✨</h3>
                     <h2 className="sm:text-5xl m-4 font-archivoBlack"> Destacados </h2>
                     <h3 className="sm:text-2xl font-outfit">Busca a tu profesor favorito y accede a sus shows directamente</h3>
@@ -46,15 +46,15 @@ export default function Home() {
                 </div>
                 <div className="w-full flex py-2 gap-y-2 flex-col min-h-64 items-center justify-center text-white">
                     <h2 className="sm:text-5xl m-6 font-archivoBlack">Preguntas Frecuentes</h2>
-                    <div className="text-lg font-outfit">
+                    <div className="text-lg font-outfit p-4">
                         <Accordion title="¿Como me uno a MetroComedy?" answer="Escribe a +58 424-3023017"></Accordion>
                         <Accordion title="¿Qué es MetroCommedy?" answer="Es una agrupacion estudiantil de la Universidad Metropolitana, cuyo fin es crear, practicar y presentar espectáculos cómicos "></Accordion>
                         <Accordion title="¿Cual es el misión de MetroComedy?" answer="Crear un ambiente de risas dentro de la Univerisidad Metropolitana, teniendo en cuenta el respeto y la empatia"></Accordion>
 
                     </div>
                 </div>
-                <Footer></Footer>
         </div>
+         <Footer></Footer>
         </>
     )
 }
